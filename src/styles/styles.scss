@@ -1,14 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import './_variables';
+@import './_theme';
+@include mat-core();
+@include angular-material-theme($custom-theme);
+
 *{
     box-sizing: border-box;
 }
 
-html { 
+html, body { 
     height: 100%; 
+    width: 100%;
+    margin: 0;
+
 }
 body {
-    height: 100%; 
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
-    background-color: gray;
+    background-color: map-get($colors, gray-background);
+}
+
+app-root{
+    display: flex;
+    justify-content: center;
 }
