@@ -1,15 +1,1 @@
-mat-toolbar {
-  z-index: 10;
-}
-
-mat-toolbar section.logo {
-  height: 70%;
-  width: 2em;
-}
-
-mat-toolbar section.logo img {
-  max-height: 100%;
-  width: auto;
-  display: block;
-}
-/*# sourceMappingURL=home-header.component.css.map */
+/* No CSS *//*# sourceMappingURL=home-header.component.css.map */

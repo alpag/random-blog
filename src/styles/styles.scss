@@ -16,10 +16,5 @@ html, body {
 
 }
 body {
-    background-color: map-get($colors, gray-background);
-}
-
-app-root{
-    display: flex;
-    justify-content: center;
+    // background-color: map-get($colors, gray-background);
 }
