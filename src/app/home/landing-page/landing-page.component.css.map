@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA;;sBAEsB;AA2EtB;;sBAEsB;AD9EtB,AACI,IADA,CACA,WAAW,CAAA;EACP,gBAAgB,EAAE,+CAA+C;EACjE,eAAe,EAAE,KAAK;EACtB,MAAM,EAAE,KAAK;CAiBhB;;ACyED,MAAM,EAAE,SAAS,EAAE,KAAK;ED9F5B,AACI,IADA,CACA,WAAW,CAAA;IAMH,MAAM,EAAE,KAAK;GAcpB;;;ACgFD,MAAM,EAAE,SAAS,EAAE,KAAK;EDrG5B,AACI,IADA,CACA,WAAW,CAAA;IAUH,MAAM,EAAE,IAAI;GAUnB;;;ACuFD,MAAM,EAAE,SAAS,EAAE,KAAK;ED5G5B,AACI,IADA,CACA,WAAW,CAAA;IAcH,MAAM,EAAE,IAAI;GAMnB;;;AC8FD,MAAM,EAAE,SAAS,EAAE,MAAM;EDnH7B,AACI,IADA,CACA,WAAW,CAAA;IAkBH,MAAM,EAAE,IAAI;GAEnB;;;AArBL,AAuBI,IAvBA,CAuBA,EAAE,CAAA;EACE,SAAS,EAAE,GAAG;CACjB",
     "sources": [
-        "landing-page.component.scss"
+        "landing-page.component.scss",
+        "../../../styles/_variables.scss"
     ],
     "names": [],
     "file": "landing-page.component.css"

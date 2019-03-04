@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+main{
+    .travel-pic{
+        background-image: url('../../../assets/images/landing-photo.jpg');
+        background-size: cover;
+        height: 200px;
+
+        @include sm {
+            height: 200px;
+        }
+
+        @include md{
+            height: auto;
+        }
+
+        @include lg{
+            height: auto;
+        }
+
+        @include xl{
+            height: auto;
+        }
+    }
+
+    h1{
+        font-size: 5vw;
+    }
+}
