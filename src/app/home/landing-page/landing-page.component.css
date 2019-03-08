@@ -77,28 +77,4 @@ main .primary-article {
     margin-top: 6rem;
   }
 }
-
-main .primary-article .link-header {
-  margin-top: 3rem;
-  font-size: 1rem;
-  color: black;
-}
-
-@media (min-width: 768px) {
-  main .primary-article .link-header {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 992px) {
-  main .primary-article .link-header {
-    font-size: 2rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  main .primary-article .link-header {
-    font-size: 2rem;
-  }
-}
 /*# sourceMappingURL=landing-page.component.css.map */

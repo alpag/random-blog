@@ -1,0 +1,30 @@
+/*********************
+VARIABLES
+*********************/
+/*********************
+BREAKPOINTS
+*********************/
+.link-header {
+  margin-top: 3rem;
+  font-size: 1rem;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .link-header {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .link-header {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .link-header {
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=landing-small-article.component.css.map */

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA;;sBAEsB;AA2EtB;;sBAEsB;AD7EtB,AAAA,YAAY,CAAA;EACR,UAAU,EAAE,IAAI;EAChB,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,KAAK;CAaf;;ACoFG,MAAM,EAAE,SAAS,EAAE,KAAK;EDpG5B,AAAA,YAAY,CAAA;IAMJ,SAAS,EAAE,IAAI;GAUtB;;;AC2FG,MAAM,EAAE,SAAS,EAAE,KAAK;ED3G5B,AAAA,YAAY,CAAA;IAUJ,SAAS,EAAE,IAAI;GAMtB;;;ACkGG,MAAM,EAAE,SAAS,EAAE,MAAM;EDlH7B,AAAA,YAAY,CAAA;IAcJ,SAAS,EAAE,IAAI;GAEtB",
+    "sources": [
+        "landing-small-article.component.scss",
+        "../../../../../styles/_variables.scss"
+    ],
+    "names": [],
+    "file": "landing-small-article.component.css"
+}

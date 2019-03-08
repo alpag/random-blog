@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SMALLARTICLES} from './small-articles';
 
 @Component({
   selector: 'app-landing-page',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent implements OnInit {
-
+  smallArticles = SMALLARTICLES;
   constructor() { }
 
   ngOnInit() {

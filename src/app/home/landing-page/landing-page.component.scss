@@ -56,23 +56,7 @@ main{
             margin-top: 6rem;
         }
 
-        .link-header{
-            margin-top: 3rem;
-            font-size: 1rem;
-            color: black;
-    
-            @include md{
-                font-size: 1rem;
-            }
-    
-            @include lg{
-                font-size: 2rem;
-            }
-    
-            @include xl{
-                font-size: 2rem;
-            }
-        }
+        
     }
 
     
