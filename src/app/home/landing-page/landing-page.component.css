@@ -10,12 +10,6 @@ main .travel-pic {
   height: 200px;
 }
 
-@media (min-width: 576px) {
-  main .travel-pic {
-    height: 200px;
-  }
-}
-
 @media (min-width: 768px) {
   main .travel-pic {
     height: auto;
@@ -34,7 +28,77 @@ main .travel-pic {
   }
 }
 
-main h1 {
-  font-size: 5vw;
+main .primary-text {
+  font-size: 2rem;
+  margin-top: 3rem;
+  font-weight: bold;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  main .primary-text {
+    margin-top: 5rem;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  main .primary-text {
+    margin-top: 10rem;
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .primary-text {
+    margin-top: 10rem;
+    font-size: 3rem;
+  }
+}
+
+main .primary-article {
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  main .primary-article {
+    margin-top: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  main .primary-article {
+    margin-top: 6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .primary-article {
+    margin-top: 6rem;
+  }
+}
+
+main .primary-article .link-header {
+  margin-top: 3rem;
+  font-size: 1rem;
+  color: black;
+}
+
+@media (min-width: 768px) {
+  main .primary-article .link-header {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  main .primary-article .link-header {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .primary-article .link-header {
+    font-size: 2rem;
+  }
 }
 /*# sourceMappingURL=landing-page.component.css.map */

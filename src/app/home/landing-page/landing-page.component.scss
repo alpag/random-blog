@@ -5,10 +5,6 @@ main{
         background-size: cover;
         height: 200px;
 
-        @include sm {
-            height: 200px;
-        }
-
         @include md{
             height: auto;
         }
@@ -22,7 +18,62 @@ main{
         }
     }
 
-    h1{
-        font-size: 5vw;
+    .primary-text{
+        font-size: 2rem;
+        margin-top: 3rem;
+        font-weight: bold;
+        color: black;
+        
+        @include md{
+            margin-top: 5rem;
+            font-size: 2rem;
+        }
+        
+        @include lg{
+            margin-top: 10rem;
+            font-size: 3rem;
+
+        }
+
+        @include xl{
+            margin-top: 10rem;
+            font-size: 3rem;
+        }
     }
+
+    .primary-article{
+        margin-top: 2rem;
+
+        @include md{
+            margin-top: 3rem;
+        }
+
+        @include lg{
+            margin-top: 6rem;
+        }
+
+        @include xl{
+            margin-top: 6rem;
+        }
+
+        .link-header{
+            margin-top: 3rem;
+            font-size: 1rem;
+            color: black;
+    
+            @include md{
+                font-size: 1rem;
+            }
+    
+            @include lg{
+                font-size: 2rem;
+            }
+    
+            @include xl{
+                font-size: 2rem;
+            }
+        }
+    }
+
+    
 }

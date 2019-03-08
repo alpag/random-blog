@@ -1,9 +1,24 @@
+@import '../styles/variables';
 main{
     min-height: 100%;
     position: relative;
 
+    section{
+        @include xl{
+            margin: 0 12em 0 12em;
+        }
+        @include lg{
+            margin: 0 10em 0 10em;
+        }
+        @include md{
+            margin: 0 5em 0 5em;
+        }
+        padding-bottom: 50px;
+    }
+
     home-footer{
         position: absolute;
         bottom: 0;
+        height: 50px;
     }
 }
