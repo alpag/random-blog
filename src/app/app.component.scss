@@ -5,13 +5,13 @@ main{
 
     section{
         @include xl{
-            margin: 0 12em 0 12em;
+            margin: 0 12em 3em 12em;
         }
         @include lg{
-            margin: 0 10em 0 10em;
+            margin: 0 10em 3em 10em;
         }
         @include md{
-            margin: 0 5em 0 5em;
+            margin: 0 5em 2em 5em;
         }
         padding-bottom: 50px;
     }

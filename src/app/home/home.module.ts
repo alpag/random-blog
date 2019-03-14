@@ -6,11 +6,12 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HomeHeaderComponent } from './home-header/home-header.component';
 import { HomeHeaderNavbarComponent } from './home-header/home-header-navbar.component';
 import { HomeFooterComponent } from './home-footer/home-footer.component';
+import { LandingSmallArticleComponent } from './landing-page/reusable/landing-small-article/landing-small-article.component';
 
 
 
 @NgModule({
-  declarations: [LandingPageComponent, NotFoundComponent, HomeHeaderComponent, HomeHeaderNavbarComponent, HomeFooterComponent],
+  declarations: [LandingPageComponent, NotFoundComponent, HomeHeaderComponent, HomeHeaderNavbarComponent, HomeFooterComponent, LandingSmallArticleComponent],
   imports: [
     CommonModule
   ],
@@ -19,7 +20,8 @@ import { HomeFooterComponent } from './home-footer/home-footer.component';
     NotFoundComponent,
     HomeHeaderComponent,
     HomeHeaderNavbarComponent,
-    HomeFooterComponent
+    HomeFooterComponent,
+    LandingSmallArticleComponent
   ]
 })
 export class HomeModule { }
