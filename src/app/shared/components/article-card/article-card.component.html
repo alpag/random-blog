@@ -1,7 +1,8 @@
-<div class="card border-secondary mb-3">
-  <div class="card-header">{{article.publishDate}}</div>
-  <div class="card-body">
-    <h4 class="card-title">{{article.title}}</h4>
-    <p class="card-text"> {{article.content}}</p>
+<main class="mb-3">
+  <div class="article-picture">
+    <img src="{{article.photoUrl}}" alt="">
   </div>
-</div>
+  <div class="card-header">
+    <h4 class="card-title">{{article.title}}</h4>
+    {{article.publishDate | date:'fullDate'}}</div>
+</main>

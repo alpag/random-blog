@@ -1,0 +1,12 @@
+@import '../../../styles/variables';
+
+.article-box{
+    @include lg{
+        padding: 2em 6em 2em 6em;
+
+    }
+
+    @include xl{
+        padding: 2em 6em 2em 6em;
+    }
+}

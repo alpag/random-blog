@@ -5,17 +5,17 @@ import { Component, OnInit } from '@angular/core';
     template: `
     <nav class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-         <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+         <li class="nav-item">
+            <a routerLink="/home" routerLinkActive="active" class="nav-link" href="#">Home</a>
          </li>
          <li class="nav-item">
-            <a class="nav-link" href="#">Articles</a>
+            <a routerLink="/articles" routerLinkActive="active" class="nav-link">Articles</a>
          </li>
          <li class="nav-item">
-            <a class="nav-link" href="#">Currencies</a>
+            <a routerLink="/currencies" routerLinkActive="active" class="nav-link" href="#">Currencies</a>
          </li>
          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a routerLink="/contact" routerLinkActive="active" class="nav-link" href="#">Contact</a>
          </li>
       </ul>
    </nav>
@@ -25,5 +25,6 @@ import { Component, OnInit } from '@angular/core';
 export class HomeHeaderNavbarComponent implements OnInit {
     constructor() { }
 
-    ngOnInit(): void { }
+    ngOnInit(): void {
+     }
 }

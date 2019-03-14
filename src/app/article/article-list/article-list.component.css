@@ -1,0 +1,18 @@
+/*********************
+VARIABLES
+*********************/
+/*********************
+BREAKPOINTS
+*********************/
+@media (min-width: 992px) {
+  .article-box {
+    padding: 2em 6em 2em 6em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .article-box {
+    padding: 2em 6em 2em 6em;
+  }
+}
+/*# sourceMappingURL=article-list.component.css.map */
