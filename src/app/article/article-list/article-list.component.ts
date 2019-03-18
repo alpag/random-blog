@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ArticleService } from '../../core';
 import { Article } from '../../shared/models/article.model';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-article-list',
@@ -8,7 +9,7 @@ import { Article } from '../../shared/models/article.model';
   styleUrls: ['./article-list.component.scss']
 })
 export class ArticleListComponent implements OnInit {
-  articles : Article[];
+  articles : Observable<Article[]>;
   viralArticle : Article;
   constructor(private articleService: ArticleService) { }
   

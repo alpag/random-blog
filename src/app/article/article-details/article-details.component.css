@@ -1,0 +1,7 @@
+.article-picture img {
+  width: auto;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=article-details.component.css.map */

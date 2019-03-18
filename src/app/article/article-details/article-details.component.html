@@ -1,3 +1,9 @@
-<p>
-  article-details works!
-</p>
+<section class="container-fluid d-flex flex-column align-items-center" *ngIf="article | async as article">
+  <div class="article-picture">
+    <img src="{{article.photoUrl}}" alt="">
+  </div>
+  <h1>{{article.title}}</h1>
+  <p class="text-muted">{{article.publishDate | date:'fullDate'}}</p>
+  <p class="text-primary w-50">{{article.content}}</p>
+</section>
+
