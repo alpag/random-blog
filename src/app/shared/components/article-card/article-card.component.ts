@@ -14,3 +14,4 @@ export class ArticleCardComponent implements OnInit {
   }
 
 }
+
