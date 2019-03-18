@@ -7,15 +7,22 @@ import { HomeHeaderComponent } from './home-header/home-header.component';
 import { HomeHeaderNavbarComponent } from './home-header/home-header-navbar.component';
 import { HomeFooterComponent } from './home-footer/home-footer.component';
 import { LandingSmallArticleComponent } from './landing-page/reusable/landing-small-article/landing-small-article.component';
-import { RouterModule } from '@angular/router';
+import { HomeRoutingModule } from './home-routing.module';
 
 
 
 @NgModule({
-  declarations: [LandingPageComponent, NotFoundComponent, HomeHeaderComponent, HomeHeaderNavbarComponent, HomeFooterComponent, LandingSmallArticleComponent],
+  declarations: [
+    LandingPageComponent, 
+    NotFoundComponent, 
+    HomeHeaderComponent, 
+    HomeHeaderNavbarComponent, 
+    HomeFooterComponent, 
+    LandingSmallArticleComponent
+  ],
   imports: [
     CommonModule,
-    RouterModule
+    HomeRoutingModule
   ],
   exports: [
     LandingPageComponent,

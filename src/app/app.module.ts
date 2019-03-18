@@ -18,8 +18,8 @@ import { CoreModule } from './core/core.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HomeModule,
     ArticleModule,
+    HomeModule,
     CoreModule
   ],
   providers: [],
