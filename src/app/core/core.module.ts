@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Optional, SkipSelf } from '@angular/core';
 import { throwIfAlreadyLoaded } from './module-import-guard';
 import { ArticleService } from './services/article.service';
+import { ContactService } from './services/contact.service';
 
 @NgModule({
   declarations: [],
@@ -10,7 +11,8 @@ import { ArticleService } from './services/article.service';
     CommonModule
   ],
   providers: [
-    ArticleService
+    ArticleService,
+    ContactService
   ]
 })
 export class CoreModule { 

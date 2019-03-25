@@ -1,19 +1,12 @@
 import { Injectable, OnInit } from '@angular/core';
 import { Article } from 'src/app/shared/models/article.model';
 import { Observable, of } from 'rxjs';
-import { isLoweredSymbol } from '@angular/compiler';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ArticleService implements OnInit{
+export class ArticleService{
   private ARTICLES :Article[] = [];
-
-  ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
-    
-  }
 
   getArticles() : Observable<Article[]>{
     return of(this.ARTICLES);
@@ -22,7 +15,6 @@ export class ArticleService implements OnInit{
   getArticle(id: string) : Observable<Article>{
     return of(this.ARTICLES[+id]);
   }
-
 
   constructor() { 
     var a = new Article("Lorem ipsum", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, omnis suscipit? Harum, cumque architecto. Mollitia facere, libero temporibus magnam ullam modi qui voluptatum atque sequi doloribus quae excepturi sint id.", "https://thenypost.files.wordpress.com/2018/10/102318-dogs-color-determine-disesases-life.jpg")
