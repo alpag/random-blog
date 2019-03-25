@@ -9,14 +9,16 @@ import { Observable } from 'rxjs';
   styleUrls: ['./article-list.component.scss']
 })
 export class ArticleListComponent implements OnInit {
-  articles : Observable<Article[]>;
+  articles : Article[];
   viralArticle : Article;
   constructor(private articleService: ArticleService) { }
   
   ngOnInit() {
-    this.articles = this.articleService.getArticles();
-    this.viralArticle = this.articles[0];
-    console.log(this.articles);
+    this.articleService.getArticles().subscribe((articles : Article[]) =>{
+      this.articles = articles;
+      this.viralArticle = this.articles[0];
+      this.articles.shift();
+    })
   }
 
 }

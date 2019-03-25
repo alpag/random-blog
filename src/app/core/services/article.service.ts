@@ -31,9 +31,9 @@ export class ArticleService implements OnInit{
     this.ARTICLES.push(a);
     var a = new Article("It's weird", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, omnis suscipit? Harum, cumque architecto. Mollitia facere, libero temporibus magnam ullam modi qui voluptatum atque sequi doloribus quae excepturi sint id.", "http://bi.gazeta.pl/im/2e/14/c8/z13112366V,Bialystok.jpg")
     this.ARTICLES.push(a);
-    var a = new Article("It's weird", "Dolor sit amet!", "http://bi.gazeta.pl/im/2e/14/c8/z13112366V,Bialystok.jpg")
+    var a = new Article("It's weird2", "Dolor sit amet!", "http://bi.gazeta.pl/im/2e/14/c8/z13112366V,Bialystok.jpg")
     this.ARTICLES.push(a);
-    var a = new Article("It's weird", "Dolor sit amet!", "http://bi.gazeta.pl/im/2e/14/c8/z13112366V,Bialystok.jpg")
+    var a = new Article("It's weird3", "Dolor sit amet!", "http://bi.gazeta.pl/im/2e/14/c8/z13112366V,Bialystok.jpg")
     this.ARTICLES.push(a);
   }
 }
