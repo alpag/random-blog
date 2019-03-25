@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './home/home.module';
 import { ArticleModule } from './article/article.module';
 import { CoreModule } from './core/core.module';
+import { ContactModule } from './contact/contact.module';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { CoreModule } from './core/core.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ContactModule,
     ArticleModule,
     HomeModule,
     CoreModule

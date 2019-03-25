@@ -1,7 +1,34 @@
+/*********************
+VARIABLES
+*********************/
+/*********************
+BREAKPOINTS
+*********************/
 .article-picture img {
-  width: auto;
-  height: 300px;
+  width: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .article-picture img {
+    width: auto;
+    height: 300px;
+  }
+}
+
+@media (min-width: 992px) {
+  .article-picture img {
+    width: auto;
+    height: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .article-picture img {
+    width: auto;
+    height: 300px;
+  }
 }
 /*# sourceMappingURL=article-details.component.css.map */

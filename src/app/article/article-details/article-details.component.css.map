@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AACI,gBADY,CACZ,GAAG,CAAA;EACC,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,KAAK;CACpB",
+    "mappings": "ACAA;;sBAEsB;AA2EtB;;sBAEsB;AD7EtB,AACI,gBADY,CACZ,GAAG,CAAA;EACC,KAAK,EAAE,IAAI;EACP,MAAM,EAAE,IAAI;EAChB,UAAU,EAAE,KAAK;CAgBpB;;ACgFD,MAAM,EAAE,SAAS,EAAE,KAAK;EDpG5B,AACI,gBADY,CACZ,GAAG,CAAA;IAMK,KAAK,EAAE,IAAI;IACf,MAAM,EAAE,KAAK;GAYhB;;;ACuFD,MAAM,EAAE,SAAS,EAAE,KAAK;ED3G5B,AACI,gBADY,CACZ,GAAG,CAAA;IAWK,KAAK,EAAE,IAAI;IACf,MAAM,EAAE,KAAK;GAOhB;;;AC8FD,MAAM,EAAE,SAAS,EAAE,MAAM;EDlH7B,AACI,gBADY,CACZ,GAAG,CAAA;IAgBK,KAAK,EAAE,IAAI;IACf,MAAM,EAAE,KAAK;GAEhB",
     "sources": [
-        "article-details.component.scss"
+        "article-details.component.scss",
+        "../../../styles/_variables.scss"
     ],
     "names": [],
     "file": "article-details.component.css"
