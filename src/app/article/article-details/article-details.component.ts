@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
   styleUrls: ['./article-details.component.scss']
 })
 export class ArticleDetailsComponent implements OnInit {
-  article : Observable<Article>;
+  article : Article;
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -18,8 +18,12 @@ export class ArticleDetailsComponent implements OnInit {
 
   ngOnInit() {
     let id = this.route.snapshot.paramMap.get('id');
-
-    this.article = this.articleService.getArticle(id);
+    this.articleService.getArticle(id).subscribe((article : Article) =>{
+      this.article = article;
+    })
+    console.log(this.article)
+    if(this.article == null)
+      this.router.navigate(['/404'])
   }
 
 }

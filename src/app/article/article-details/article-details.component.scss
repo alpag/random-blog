@@ -1,7 +1,24 @@
+@import '../../../styles/variables';
+
 .article-picture{
     img{
-        width: auto;
-        height: 300px;
+        width: 100%;
+            height: auto;
         object-fit: cover;
+
+        @include md{
+            width: auto;
+        height: 300px;
+        }
+
+        @include lg{
+            width: auto;
+        height: 300px;
+        }
+
+        @include xl{
+            width: auto;
+        height: 300px;
+        }
     }
 }

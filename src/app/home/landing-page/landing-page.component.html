@@ -3,7 +3,7 @@
     <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 order-md-2 order-lg-2 order-xl-2 travel-pic"></div>
       <div class="row col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
         <span class="col-12 primary-text">See places you have never seen before</span>    
-        <app-landing-small-article *ngFor="let smallArticle of smallArticles" [smallArticle]="smallArticle" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 primary-article">
+        <app-landing-small-article [routerLink] = "[smallArticle.link]" *ngFor="let smallArticle of smallArticles" [smallArticle]="smallArticle" class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 primary-article">
           
         </app-landing-small-article>
       </div>

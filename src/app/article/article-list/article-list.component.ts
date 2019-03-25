@@ -17,7 +17,6 @@ export class ArticleListComponent implements OnInit {
     this.articleService.getArticles().subscribe((articles : Article[]) =>{
       this.articles = articles;
       this.viralArticle = this.articles[0];
-      this.articles.shift();
     })
   }
 

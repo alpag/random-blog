@@ -10,7 +10,11 @@ const routes: Routes = [
     redirectTo: '/home',
     pathMatch: 'full'
   },
-  { path: '**', component: NotFoundComponent }
+  { path: '404', component: NotFoundComponent},
+  { path: '**',
+    redirectTo: '/404',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
