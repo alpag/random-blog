@@ -1,4 +1,7 @@
 import { Injectable } from '@angular/core';
+import { ContactMessage } from 'src/app/shared/models/contact-message.model';
+
+
 const OWNERMAIL = "foo@bar.com";
 
 @Injectable({
@@ -6,18 +9,18 @@ const OWNERMAIL = "foo@bar.com";
   })
 
 export class ContactService {
-    contactAction(author : string, mail : string, message : string){
+    contactAction(message : ContactMessage){
         console.log("SENDING MAIL FOR" + OWNERMAIL);
-        this.sendMail(OWNERMAIL, this.createMailContent(author, mail, message));
+        this.sendMail(OWNERMAIL, this.createMailContent(message));
     }
 
-    createMailContent(author : string, mail:string, message: string) : string{
-        let currentTime = new Date();
-        return "New message from " + author + " (" + mail + ") sent " + currentTime + "\n. Message: \n\n" + message; 
+    createMailContent(message : ContactMessage) : ContactMessage{
+        message.content = "New message from " + message.authorName + " (" + message.authorMail + ") sent " + message.date + "\n. Message: \n\n" + message.content; 
+        return message;
     }
 
-    sendMail(mail : string, content: string){
+    sendMail(mail : string, message: ContactMessage){
         console.log("SENT MAIL TO " + mail);
-        console.log(content);
+        console.log(message.content);
     }
 }
