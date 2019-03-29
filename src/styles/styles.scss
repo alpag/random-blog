@@ -1,9 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import './_variables';
-@import './_theme';
-@include mat-core();
-@include angular-material-theme($custom-theme);
 
 *{
     box-sizing: border-box;

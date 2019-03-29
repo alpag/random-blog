@@ -1,19 +1,28 @@
-<form (ngSubmit)="onSubmit()">
+<form (ngSubmit)="onSubmit()" #contactForm="ngForm">
   <div class="form-group">
-<h1>i gotta fix it :(</h1>
     <label for="email">Email address</label>
-    <input type="email" class="form-control" id="email" placeholder="Enter email" required
-    name="email" >
-    <div [hidden]="email.valid || email.pristine" class="invalid-feedback">Sorry, that username's taken. Try another?</div>
+    <input type="email" class="form-control" id="authorEmail" placeholder="Enter email" required
+    [(ngModel)]="message.authorEmail" name="authorEmail" #authorEmail="ngModel">
+    <div class="invalid-feedback" style="display:inline;"  
+    [hidden]="authorEmail.valid || authorEmail.pristine"> You have to put your mail here in order to get response.</div>
     <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
-    
-    <label>Name</label>
-    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
-    
   </div>
+
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" id="authorName" placeholder="Enter your name" required
+    [(ngModel)]="message.authorName" name="authorName" #authorName="ngModel">
+    <div class="invalid-feedback" style="display:inline;"  
+    [hidden]="authorName.valid || authorName.pristine"> Please tell me, what's your name.</div>
+  </div>
+  
   <div class="form-group">
     <label>Write your message here</label>
-    <textarea class="form-control" id="message" rows="3" required></textarea>
+    <textarea class="form-control" id="content" rows="3" required
+    [(ngModel)]="message.content" name="content" #content="ngModel"></textarea>
+    <div class="invalid-feedback" style="display:inline;"  
+    [hidden]="content.valid || content.pristine"> Write your message here</div>
+    
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

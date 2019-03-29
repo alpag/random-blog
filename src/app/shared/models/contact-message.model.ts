@@ -29,8 +29,7 @@ export class ContactMessage{
     }
 
     
-    constructor(authorName : string, authorMail : string, 
-    content : string) {
+    constructor() {
         this.date = new Date();
     }
 
