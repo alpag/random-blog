@@ -1,7 +1,7 @@
 <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
   <div class="form-group">
     <label for="email">Email address</label>
-    <input type="email" class="form-control" id="authorEmail" placeholder="Enter email" required
+    <input type="text" class="form-control" id="authorEmail" placeholder="Enter email" required email
     [(ngModel)]="message.authorEmail" name="authorEmail" #authorEmail="ngModel">
     <div class="invalid-feedback" style="display:inline;"  
     [hidden]="authorEmail.valid || authorEmail.pristine"> You have to put your mail here in order to get response.</div>
@@ -18,11 +18,12 @@
   
   <div class="form-group">
     <label>Write your message here</label>
-    <textarea class="form-control" id="content" rows="3" required
+    <textarea class="form-control" id="content" rows="3" required minlength="10"
     [(ngModel)]="message.content" name="content" #content="ngModel"></textarea>
     <div class="invalid-feedback" style="display:inline;"  
-    [hidden]="content.valid || content.pristine"> Write your message here</div>
-    
+    [hidden]="content.valid || content.pristine"> 
+      Your message has to be at least 10 characters long.
+    </div>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button [disabled]="!contactForm.form.valid" type="submit" class="btn btn-primary">Submit</button>
 </form>

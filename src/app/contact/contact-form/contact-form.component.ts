@@ -15,7 +15,8 @@ message : ContactMessage = new ContactMessage();
   }
 
   onSubmit(){
-    console.log("XDDD")
+    console.log(this.message)
+    this.contactService.contactAction(this.message);
   }
 
 }

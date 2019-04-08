@@ -10,12 +10,12 @@ const OWNERMAIL = "foo@bar.com";
 
 export class ContactService {
     contactAction(message : ContactMessage){
-        console.log("SENDING MAIL FOR" + OWNERMAIL);
+        console.log("SENDING MAIL FOR " + OWNERMAIL);
         this.sendMail(OWNERMAIL, this.createMailContent(message));
     }
 
     createMailContent(message : ContactMessage) : ContactMessage{
-        message.content = "New message from " + message.authorName + " (" + message.authorMail + ") sent " + message.date + "\n. Message: \n\n" + message.content; 
+        message.content = "New message from " + message.authorName + " (" + message.authorEmail + ") sent " + message.date + "\n. Message: \n\n" + message.content; 
         return message;
     }
 
