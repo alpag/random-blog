@@ -1,2 +1,5 @@
 <h1 class="mt-5 mb-5">Ask me whatever you want!</h1>
-<app-contact-form class="mb-3"></app-contact-form>
+<app-contact-form class="mb-3" [hidden]="form.submitted" #form></app-contact-form>
+<div class="alert alert-dismissible alert-success" [hidden] = "!form.submitted">
+    <p class="lead">Thanks for your question. Please wait for my answer!</p>
+</div>

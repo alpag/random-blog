@@ -8,15 +8,16 @@ import { ContactMessage } from 'src/app/shared/models/contact-message.model';
   styleUrls: ['./contact-form.component.scss']
 })
 export class ContactFormComponent implements OnInit {
-message : ContactMessage = new ContactMessage();
+  message : ContactMessage = new ContactMessage();
+  submitted = false;
   constructor(private contactService : ContactService) { }
 
   ngOnInit() {
   }
 
   onSubmit(){
-    console.log(this.message)
     this.contactService.contactAction(this.message);
+    this.submitted = true;
   }
 
 }
