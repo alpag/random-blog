@@ -1,8 +1,12 @@
 <form (ngSubmit)="onSubmit(); contactForm.reset();" #contactForm="ngForm">
   <div class="form-group">
     <label for="email">Email address</label>
+    <!-- <input type="text" class="form-control" id="authorEmail" placeholder="Enter email" required email
+    [(ngModel)]="message.authorEmail" name="authorEmail" #authorEmail="ngModel" (ngModelChange)="onChange.next($event)"> -->
     <input type="text" class="form-control" id="authorEmail" placeholder="Enter email" required email
-    [(ngModel)]="message.authorEmail" name="authorEmail" #authorEmail="ngModel">
+    [(ngModel)]="message.authorEmail" name="authorEmail" #authorEmail="ngModel" (ngModelChange)="onChange.next($event)">
+    
+    
     <div class="invalid-feedback" style="display:inline;"  
     [hidden]="authorEmail.valid || authorEmail.pristine"> You have to put your mail here in order to get response.</div>
     <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
