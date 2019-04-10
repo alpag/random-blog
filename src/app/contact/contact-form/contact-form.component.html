@@ -1,29 +1,48 @@
-<form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+<form (ngSubmit)="onSubmit();" novalidate [formGroup]="contactForm">
   <div class="form-group">
     <label for="email">Email address</label>
-    <input type="text" class="form-control" id="authorEmail" placeholder="Enter email" required email
-    [(ngModel)]="message.authorEmail" name="authorEmail" #authorEmail="ngModel">
-    <div class="invalid-feedback" style="display:inline;"  
-    [hidden]="authorEmail.valid || authorEmail.pristine"> You have to put your mail here in order to get response.</div>
-    <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
+    <input  type="text" 
+            class="form-control" 
+            placeholder="Enter email"
+            formControlName="email"
+            required>
+    <div  class="invalid-feedback" 
+          style="display:inline;"
+          *ngIf="email.invalid && email.dirty"> 
+      You have to put your mail here in order to get response.
+  </div>
+    <small id="emailHelp" class="form-text text-muted">
+      I'll never share your email with anyone else.
+    </small>
   </div>
 
   <div class="form-group">
-    <label>Name</label>
-    <input type="text" class="form-control" id="authorName" placeholder="Enter your name" required
-    [(ngModel)]="message.authorName" name="authorName" #authorName="ngModel">
-    <div class="invalid-feedback" style="display:inline;"  
-    [hidden]="authorName.valid || authorName.pristine"> Please tell me, what's your name.</div>
+    <label for="name">Name</label>
+    <input  type="text" 
+            class="form-control" 
+            placeholder="Enter name"
+            formControlName="name"
+            required>
+    <div  class="invalid-feedback" 
+          style="display:inline;"
+          *ngIf="name.invalid && name.dirty"> 
+      Please tell me, what's your name.
+    </div>
   </div>
-  
+
   <div class="form-group">
-    <label>Write your message here</label>
-    <textarea class="form-control" id="content" rows="3" required minlength="10"
-    [(ngModel)]="message.content" name="content" #content="ngModel"></textarea>
-    <div class="invalid-feedback" style="display:inline;"  
-    [hidden]="content.valid || content.pristine"> 
+    <label for="content">Content</label>
+    <textarea   
+            class="form-control" 
+            placeholder="Enter your message here"
+            formControlName="content"
+            rows="5"
+            required ></textarea>
+    <div  class="invalid-feedback" 
+          style="display:inline;"
+          *ngIf="content.invalid && content.dirty"> 
       Your message has to be at least 10 characters long.
     </div>
   </div>
-  <button [disabled]="!contactForm.form.valid" type="submit" class="btn btn-primary">Submit</button>
+  <button [disabled]="!this.contactForm.valid" type='submit' class='btn btn-primary mb-5'>Submit</button>
 </form>
